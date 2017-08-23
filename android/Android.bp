@@ -16,6 +16,7 @@ bootstrap_go_package {
         "soong-cquery",
         "soong-remoteexec",
         "soong-response",
+        "soong-aosp",
         "soong-shared",
         "soong-starlark-format",
         "soong-ui-metrics_proto",

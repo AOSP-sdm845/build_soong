@@ -23,6 +23,8 @@ import (
 	"android/soong/android/soongconfig"
 	"android/soong/bazel"
 
+    "aosp/soong/android"
+
 	"github.com/google/blueprint/proptools"
 )
 
@@ -179,6 +181,9 @@ type variableProperties struct {
 			Srcs         []string `android:"arch_variant"`
 			Exclude_srcs []string `android:"arch_variant"`
 		} `android:"arch_variant"`
+
+		// include Aosp variables
+		Aosp android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -473,6 +478,9 @@ type productVariables struct {
 	ProductManufacturer string   `json:",omitempty"`
 	ProductBrand        string   `json:",omitempty"`
 	BuildVersionTags    []string `json:",omitempty"`
+	
+	// include Aosp variables
+	Aosp android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
