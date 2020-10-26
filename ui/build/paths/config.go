@@ -110,6 +110,7 @@ var Configuration = map[string]PathConfig{
 	"stubby":  Allowed,
 	"tr":      Allowed,
 	"unzip":   Allowed,
+	"zcat":    Allowed,
 	"zip":     Allowed,
 
 	// Allow prebuilts/gcc/ compilation chain
